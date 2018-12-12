@@ -97,6 +97,8 @@ async function insertTreeGroupMain(){
 
     } catch (err) {
         console.log(err.stack);
+    } finally {
+        client.close();
     }
     // Close connection
     //client.close();
